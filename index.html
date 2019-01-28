@@ -1,0 +1,43 @@
+<html>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+        <script src='./data/js/main.js?v3'></script>
+        
+        <style>
+         #canada_map {
+              /*position:absolute; top:0; bottom:0; */
+              height: 450px; width: 100%;
+              }
+          .location_marker {
+                background-image: url('./data/img/locationmarker.png');
+                background-size: cover;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .location_selectors {
+               width: 100%;
+               text-align: center;
+               justify-items: end;
+               /*display: flex;
+               justify-content: space-between;*/
+            }
+            .mapboxgl-popup-content{
+                 width:240px;
+            }
+         </style>
+         <div class="location_selectors">
+        <a href="#" onclick="showLayer(this.id)" id="calgary">Calgary</a>
+        <a href="#" onclick="showLayer(this.id)" id="ottawa">Ottawa</a>
+        <a href="#" onclick="showLayer(this.id)" id="quebec">Quebec</a>
+        <a href="#" onclick="showLayer(this.id)" id="toronto">Toronto</a>
+        <a href="#" onclick="showLayer(this.id)" id="vancouver">Vancouver</a>
+          </div>
+        <div id='canada_map'></div>
+        
+
+         <script>drawMap('canada_map');</script>
+       
+
+</html>
