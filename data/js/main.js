@@ -8,7 +8,7 @@ var locations = {
 }
 
 function drawMap(mapId){
-mapboxgl.accessToken = 'pk.eyJ1Ijoic3RlZm1hcmFpcyIsImEiOiJjanFuY3N0bm8wODduNDlwNm13b2Mwa285In0.xhZDVote-OVteRDi4gYQMw';
+mapboxgl.accessToken = {token};
 map = new mapboxgl.Map({
     container: 'canada_map',
     style: 'mapbox://styles/mapbox/light-v9',
