@@ -1,0 +1,20 @@
+#map_div {
+    /*position:absolute; top:0; bottom:0; */
+    height: 450px; width: 100%;
+    }
+.location_marker {
+      background-image: url('../img/locationmarker.png');
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+  .location_selectors {
+     width: 100%;
+     text-align: center;
+     justify-items: end;
+  }
+  .mapboxgl-popup-content{
+       width:240px;
+  }
